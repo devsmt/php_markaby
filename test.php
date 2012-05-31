@@ -19,7 +19,7 @@ mab.html do
 end
 puts mab.to_s
 */
-require 'php_markaby.php';
+require 'Builder.php';
 use \Markaby\TagBuilder as T;
 
 $m = new \Markaby\Builder();
