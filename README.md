@@ -1,11 +1,12 @@
 php_markaby
 ===========
 
-php html builder, inspired by Markaby ruby gem
+php html builder, inspired by [Markaby ruby gem](http://markaby.github.io/)
 
 
 ruby code:
 ----------
+```ruby
     require 'markaby'
 
     mab = Markaby::Builder.new
@@ -21,11 +22,12 @@ ruby code:
       end
     end
     puts mab.to_s
-
+```
 
 
 equivalent PHP code:
 --------------------
+```php
     use \Markaby\TagBuilder as T;
 
     $m = new \Markaby\Builder();
@@ -44,3 +46,4 @@ equivalent PHP code:
           });
         });
     echo $m;
+```

@@ -2,7 +2,7 @@
 
 namespace Markaby;
 
-class Builder{
+class Builder {
     var $lines = array();
     var $head = array();
 
@@ -15,7 +15,7 @@ class Builder{
     }
 
     public function __call($name, $arguments) {
-        $this->lines[] = call_user_func_array("\Markaby\TagBuilder::tag", array_merge(array($name),$arguments ) );
+        $this->lines[] = call_user_func_array("\Markaby\TagBuilder::tag", array_merge(array($name), $arguments ) );
     }
 
     public function head($content) {
